@@ -8,9 +8,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="container mx-auto m-5">
-    <header>
-      <div>
-
+    <header class="my-10">
+      <div class="flex lg:flex-row flex-col md:justify-between md:items-center text-center bg-slate-500 my-10 p-4 md:p-8">
+        <div class="text-4xl font-bold text-yellow-400 py-5 m-4">Intractive Geometry <br> Genius</div>
+        <div>
+          <button id="blog-btn" class="btn bg-teal-600 py-5 my-5 m-4 text-white px-5 text-center">Blog</button>
+        </div>
       </div>
     </header>
     <!-- main content here -->
@@ -164,5 +167,10 @@
     <script src="./rombosh.js"></script>
     <script src="./pentagon.js"></script>
     <script src="./elipsis.js"></script>
+    <script>
+      document.getElementById("blog-btn").addEventListener("click",function () {
+        console.log("this is another");
+      })
+    </script>
 </body>
 </html>
